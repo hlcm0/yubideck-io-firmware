@@ -1,5 +1,5 @@
 # yubideck-io-firmware
-rp2040 firmware for using yubideck io
+rp2040 and samd21 firmware for using yubideck io
 
 ## How to use:
 ### for rp2040
