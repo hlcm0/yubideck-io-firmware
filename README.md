@@ -12,7 +12,7 @@ rp2040 and samd21 firmware for using yubideck io
 7.Select UF2 Board in Tools -> Port<br>
 8.Upload the code<br>
 
-### for samd21
+### for samd21(not working properly right now, need fixing)
 1.Install Arduino IDE<br>
 2.Install Arduino SAMD boards from board manager(Important: install v1.8.9 because some issues mentioned in https://github.com/NicoHood/HID/issues/411)<br>
 3.Install HID-project library<br>
