@@ -18,4 +18,4 @@ should be similar on other MCUs that support TinyUSB<br>
 ## What's inside the boards.txt:
 
 1.Changing the VID and PID of the Raspberry Pi Pico to 0x1973 and 0x2001 to make it the same as Yubideck controller.(So that the IO would recognize the pico as a Yubideck)<br>
-2.Changing the Manufacture name to "ZHOUSENSOR I/O SYSTEM" and changing the product name to "ZhouSensor YubiDeck" (Necessary in testtools, but maybe not important during actual playing? )<br>
+2.Changing the Manufacture name to "ZHOUSENSOR I/O SYSTEM" and changing the product name to "ZhouSensor YubiDeck" (maybe not important)<br>
