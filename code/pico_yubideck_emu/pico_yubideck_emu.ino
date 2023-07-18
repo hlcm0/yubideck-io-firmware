@@ -12,12 +12,10 @@ void setup()
   // Manual begin() is required on core without built-in support for TinyUSB such as mbed rp2040
   TinyUSB_Device_Init(0);
 #endif
-
-  // Notes: following commented-out functions has no affect on ESP32
-  // usb_hid.enableOutEndpoint(true);
-  // usb_hid.setPollInterval(2);
-  // usb_hid.setReportDescriptor(desc_hid_report, sizeof(desc_hid_report));
-  // usb_hid.setStringDescriptor("TinyUSB HID Generic");
+  TinyUSBDevice.setSerialDescriptor("OK"); //设定USB设备序列号
+  TinyUSBDevice.setID(0x1973,0x2001); //设定USB设备vid，pid
+  TinyUSBDevice.setProductDescriptor("ZhouSensor YubiDeck"); //设定USB设备产品名
+  TinyUSBDevice.setManufacturerDescriptor("ZHOUSENSOR I/O SYSTEM"); //设定USB设备制造商名
   usb_hid.setPollInterval(1); //设定hid报文间隔为1ms，即最大1000hz回报率
   usb_hid.setReportCallback(get_report_callback, set_report_callback); //当电脑向手台发送数据时会调用set_report_callback进行处理
   usb_hid.begin();
